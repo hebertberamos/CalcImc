@@ -16,10 +16,12 @@ function handleInputHeight(event){
     console.log(eventNumberHeight);
 }
 
-function calcResult(weight, height){
-    return weight / (height * height);
+function calcImc(weight, height){
+    const calc = weight / (height * height);
+    console.log(calc);
 }
 
-function handleBtnCalc(){
+function handleBtnCalc(eventNumberWeight, eventNumberHeight){
+    
     console.log("clicked");
 }

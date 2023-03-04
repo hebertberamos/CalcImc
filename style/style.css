@@ -9,3 +9,28 @@ body{
     background-color: black;
     color: white;
 }
+
+.container-nav{
+    background-color: rgb(27, 169, 225);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-main{
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-information-obesidade{
+    background-color: rgb(216, 180, 135);
+}
+
+.card-information-obesidade h2{
+    background-color: blue;
+}
