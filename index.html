@@ -16,90 +16,21 @@
         </nav>
     </header>
     <main>
-        <section class="card-information-obesidade">
-            <h2>O que é obesidade?</h2>
-            <h3>O que é o IMC e como se relaciona com a obesidade?</h3>
-            <div class="card-information">
-                <p>
-                    De forma simples, a obesidade pode ser determinada pelo cálculo do Índice de Massa Corporal – IMC. Esse índice é dividido em faixas de IMC, que indicam seu grau de obesidade.
-                </p>
-                <p>
-                    Em 1832, Adolphe Quételet foi o primeiro a aplicar a matemática ao estudo do homem, criando um índice que recebeu seu nome e que anos depois seria conhecido como Índice de Massa Corporal (IMC). No entanto, os estudos de Quételet ficaram esquecidos por quase um século, e foi somente após a Segunda Guerra Mundial que os cientistas começaram a estudar a relação entre o peso corporal e outras doenças.
-                </p>
-                <p>
-                    Em 1960, quando a obesidade se tornou praticamente uma epidemia em alguns países, a fórmula de Quételet foi redescoberta e validada por outros cientistas. A partir desse momento, foi adotado pela Organização Mundial da Saúde, denominando-o de IMC.
-                </p>
-                <p>
-                    Esta fórmula é bastante simples: divida o seu peso (Quilos) pela sua altura (Metros) ao quadrado o número multiplicado por ele mesmo.
-                </p>
-                <p>
-                    IMC = Peso ÷ Altura²
-                </p>
-                <p>
-                    Mas para simplificar, temos aqui abaixo uma calculadora automática. Basta você inserir os dados e o resultado já sai na hora. De posse deste índice é só consultar a tabela que indica os níveis de obesidade.
-                </p>
-            </div>
+        <section class="card-form">
+            <form name="answarForm">
+                <div>
+                    <label for="height"></label>
+                    <input id="height" name="height" type="text">
+                </div>
+                <div>
+                    <label for="weight"></label>
+                    <input id="weight" name="weight" type="text">
+                </div>
+            </form>
         </section>
-        <section>
-            
+        <section class="card-resp">
             <div>
-                <form action="">
-                    <div class="form-input">
-                        <label for="height">Sua altura</label>
-                        <input 
-                        name="height" 
-                        id="height" 
-                        type="text"
-                        >
-                    </div>
-                    <div class="form-input">
-                        <label for="weight">Sua altura</label>
-                        <input 
-                        name="weight" 
-                        id="weight" 
-                        type="text"
-                        >
-                    </div>
-                </form>
-            </div>
-            <div class="card-button">
-                <button id="btnCalc" type="submit">Calcular</button>
-            </div>
-            <div class="card-result">
-                <p>Resultado</p>
-                <h3 class="result">24.2</h3>
-                <h4 class="response-classification"> Peso normal adequeado</h4>
-            </div>
-        </section>
-        <section class="card-classification-imc">
-            <div>
-                <h3>Classificação de IMC</h3>
-            </div>
-            <div class="card-informations">
-                <div class="classification">
-                    <p>Menos de 18,5</p>
-                    <p>Peso baixo</p>
-                </div>
-                <div class="classification">
-                    <p>Entre 18,5 e 24,9</p>
-                    <p>Peso normal ou adequado</p>
-                </div>
-                <div class="classification">
-                    <p>Entre 25,0 e 29,9</p>
-                    <p>Sobrepeso</p>
-                </div>
-                <div class="classification">
-                    <p>Entre 30,0 e 34,9</p>
-                    <p>Obesidade Grau I</p>
-                </div>
-                <div class="classification">
-                    <p>Entre 35 e 39,9</p>
-                    <p>PObesidade Grau II</p>
-                </div>
-                <div class="classification">
-                    <p>Maior que 40,0</p>
-                    <p>PObesidade Grau III ou Mórbida</p>
-                </div>
+                <h2 class="resp">23.5</h2>
             </div>
         </section>
     </main>
