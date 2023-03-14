@@ -9,32 +9,105 @@
 </head>
 <body>
     <!-- CALCULO DO IMC peso / (altura x altura) -->
-    <header class="container-nav">
-        <nav class="nav-main">
-            <h1>Calculadora IMC</h1>
-            <div>Contatos</div>
-        </nav>
-    </header>
     <main>
-        <section class="card-form">
-            <form name="answarForm">
-                <div>
-                    <label for="height"></label>
-                    <input id="height" name="height" type="text">
+        <section id="form-section" class="form-container">
+            <div class="card-form">
+                <nav class="title-form">
+                    <h1>Calculadora IMC</h1>
+                </nav>
+                <form name="answarForm">
+                    <div class="input-form">
+                        <label for="height">Altura</label>
+                        <input
+                        id="height"
+                        name="height"
+                        class="input-form"
+                        placeholder="Metros">
+                        <div data-error="error-imput" class="error-message"></div>
+                    </div>
+                    <div class="input-form">
+                        <label for="weight">Peso</label>
+                        <input
+                        id="weight"
+                        name="weight"
+                        class="input-form"
+                        placeholder="Quilos">
+                        <div data-error="error-imput" class="error-message"></div>
+                    </div>
+                </form>
+                <div class="card-button">
+                    <button name="btnCalc" type="submit">Calcular</button>
+                    <button name="btnClear">Limpar</button>
                 </div>
-                <div>
-                    <label for="weight"></label>
-                    <input id="weight" name="weight" type="text">
-                </div>
-            </form>
+            </div>
         </section>
-        <section class="card-resp">
-            <div>
-                <h2 class="resp">23.5</h2>
+        <section class="section-resp">
+            <div class="calc-response">
+                Seu IMC:
+                <div >
+                    <h2 data-response="resp-calc">23.5</h2>
+                </div> 
+            </div>
+        </section>
+        <section class="section-text">
+            <div class="card-text">
+                <div class="text-thinness">
+                    <!-- MENOR QUE 18,5 -->
+                    <div class="title-text">
+                        MAGREZA
+                    </div>
+                    <div class="paragraph-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum, maiores quas impedit incidunt ratione necessitatibus ipsa delectus cupiditate ut numquam ad facilis nihil, quis laborum reprehenderit provident, culpa atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eligendi molestias! Sapiente laboriosam praesentium repellendus eius vero! Dignissimos dicta itaque cumque accusantium excepturi porro ex ipsam ea aliquid. Fugiat, animi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="text-normal">
+                    <!-- ENTRE 18,5 E 24,9 -->
+                    <div class="title-text">
+                        NORMAL
+                    </div>
+                    <div class="paragraph-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum, maiores quas impedit incidunt ratione necessitatibus ipsa delectus cupiditate ut numquam ad facilis nihil, quis laborum reprehenderit provident, culpa atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eligendi molestias! Sapiente laboriosam praesentium repellendus eius vero! Dignissimos dicta itaque cumque accusantium excepturi porro ex ipsam ea aliquid. Fugiat, animi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="text-overweight">
+                    <!-- ENTRE 25,0 E 29,9 -->
+                    <div class="title-text">
+                        SOBREPESO
+                    </div>
+                    <div class="paragraph-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum, maiores quas impedit incidunt ratione necessitatibus ipsa delectus cupiditate ut numquam ad facilis nihil, quis laborum reprehenderit provident, culpa atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eligendi molestias! Sapiente laboriosam praesentium repellendus eius vero! Dignissimos dicta itaque cumque accusantium excepturi porro ex ipsam ea aliquid. Fugiat, animi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="text-obesity">
+                    <!-- ENTRE 30,0 E 39,9 -->
+                    <div class="title-text">
+                        OBESIDADE
+                    </div>
+                    <div class="paragraph-text">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum, maiores quas impedit incidunt ratione necessitatibus ipsa delectus cupiditate ut numquam ad facilis nihil, quis laborum reprehenderit provident, culpa atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eligendi molestias! Sapiente laboriosam praesentium repellendus eius vero! Dignissimos dicta itaque cumque accusantium excepturi porro ex ipsam ea aliquid. Fugiat, animi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-text">
+                <div class="text-seriousObesity">
+                    <!-- MAIOR QUE 40,0 -->
+                    <div class="title-text">
+                        OBESIDADE GRAVE
+                    </div>
+                    <div class="paragraph-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum, maiores quas impedit incidunt ratione necessitatibus ipsa delectus cupiditate ut numquam ad facilis nihil, quis laborum reprehenderit provident, culpa atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eligendi molestias! Sapiente laboriosam praesentium repellendus eius vero! Dignissimos dicta itaque cumque accusantium excepturi porro ex ipsam ea aliquid. Fugiat, animi.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
