@@ -6,5 +6,121 @@
 }
 
 body{
-    background-color: #333;
+    background-color: #326594;
+}
+
+.form-container{
+    padding: 20px;
+}
+
+.card-form{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 350px;
+    border-radius: 12px;
+}
+
+.title-form{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 8px 0;
+}
+
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form label{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.input-form input{
+    padding: 10px;
+    width: 100%;
+    max-width: 150px;
+    border: none;
+    margin-top: 5px;
+}
+
+.error-message{
+    color: rgb(206, 59, 59);
+}
+
+.card-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 250px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.card-button button{
+    padding: 10px;
+    width: 100%;
+    max-width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    height: 50px;
+}
+
+.section-resp{
+    padding-bottom: 20px;
+
+}
+
+.calc-response{
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 68px;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.884);
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.text-thinness{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-text{
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.918);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.card-text{
+    margin-bottom: 20px;
+}
+
+.card-text .title-text{
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 4px
 }
