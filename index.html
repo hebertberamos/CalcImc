@@ -23,7 +23,7 @@
                         name="height"
                         class="input-form"
                         placeholder="Metros">
-                        <div data-error="error-imput" class="error-message"></div>
+                        <div data-error="height" class="error-message"></div>
                     </div>
                     <div class="input-form">
                         <label for="weight">Peso</label>
@@ -32,21 +32,21 @@
                         name="weight"
                         class="input-form"
                         placeholder="Quilos">
-                        <div data-error="error-imput" class="error-message"></div>
+                        <div data-error="weight" class="error-message"></div>
+                    </div>
+                    <div class="card-button">
+                        <button name="btnCalc" type="submit">Calcular</button>
+                        <button name="btnClear">Limpar</button>
                     </div>
                 </form>
-                <div class="card-button">
-                    <button name="btnCalc" type="submit">Calcular</button>
-                    <button name="btnClear">Limpar</button>
-                </div>
             </div>
         </section>
         <section class="section-resp">
             <div class="calc-response">
-                Seu IMC:
-                <div >
-                    <h2 data-response="resp-calc">23.5</h2>
-                </div> 
+                <h3>Seu IMC:</h3>
+                <span id="calculated-number">
+                    0
+                </span>
             </div>
         </section>
         <section class="section-text">

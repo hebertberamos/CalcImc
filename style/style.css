@@ -60,6 +60,10 @@ form{
     color: rgb(206, 59, 59);
 }
 
+.input-error{
+    background-color: rgb(253, 152, 152);
+}
+
 .card-button{
     display: flex;
     align-items: center;
@@ -98,6 +102,11 @@ form{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+#calculated-number{
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .text-thinness{
