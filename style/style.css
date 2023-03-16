@@ -96,15 +96,18 @@ form{
     border-radius: 2px;
     color: rgba(255, 255, 255, 0.884);
     width: 100%;
-    max-width: 100px;
+    max-width: 255px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
 }
 
-#calculated-number{
+.calc-response h3{
+    font-size: 25px;
+}
+
+#response-number{
     font-size: 30px;
     font-weight: bolder;
 }
