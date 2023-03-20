@@ -117,22 +117,22 @@ form{
     flex-direction: column;
 }
 
-.section-text{
+
+.card-text{
+    margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.705);
     padding: 15px;
     color: rgba(255, 255, 255, 0.918);
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 17px auto;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.card-text{
-    margin-bottom: 20px;
-}
-
-.card-text .title-text{
+.card-text h2{
     font-size: larger;
     font-weight: 700;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    margin-left: 15px;
 }

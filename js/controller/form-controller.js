@@ -1,9 +1,12 @@
 import Constructor from './models/constructor.js';
 import * as numberController from './number-controller.js';
+import * as textController from './text-controller.js';
+import TextConstructor from './models/text.contructor.js';
 
 function State(){
 
     this.constructor = new Constructor();
+    this.TextConstructor = new TextConstructor()
 
     this.inputHeight = null;
     this.inputWeight = null;
@@ -95,8 +98,10 @@ export function init(){
         else{
             const result = numberController.calc(state.inputHeight.value, state.inputWeight.value);
             const resultNumber = Number(result);
-    
             state.responseNumber.innerHTML = resultNumber;
+
+            textController.addCard(resultNumber);
+            state.TextConstructor = new TextConstructor();
         }
     });
 }
