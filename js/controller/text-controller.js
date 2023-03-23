@@ -7,28 +7,11 @@ function State() {
 const state = new State();
 
 export function init(){
-    state.sectionText = document.querySelector("#resp-section");
-    state.divChanged = document.querySelector("#div-changed");
     state.titleText = document.querySelector("#title-text");
     state.text = document.querySelector("#text");
 
     console.log(state.titleText.innerHTML);
 }
-
-// export function changDiv(value){
-
-//     const h2 = document.createElement("h2");
-//     const titleText = getTitle(value);
-//     h2.innerHTML = titleText;
-
-//     const p = document.createElement("p");
-//     const textValue = getText(value);
-//     p.innerHTML = textValue;
-
-//     state.divChanged.appendChild(h2);
-//     state.divChanged.appendChild(p);
-    
-// }
 
 export function changeDiv(result){
     changTitle(result);
@@ -46,33 +29,6 @@ function changText(value){
     state.text.innerHTML = text;
     return state.text.innerHTML;
 }
-
-
-// export function addCard(value){
-//     const typeImc = createCard(value);
-//     state.sectionText.appendChild(typeImc);
-// }
-
-//fazer função que pegue a div que foi criada anteriorment e delete ela quando o botão de calcular for clicado
-
-
-// function createCard(value){
-//     const div = document.createElement("div");
-//     div.classList.add("card-text");
-
-//     const h2 = document.createElement("h2");
-//     const titleText = getTitle(value);
-//     h2.innerHTML = titleText;
-
-//     const p = document.createElement("p");
-//     const textValue = getText(value);
-//     p.innerHTML = textValue;
-
-//     div.appendChild(h2);
-//     div.appendChild(p);
-
-//     return div;
-// }
 
 function getTitle(value){
     const titleThinness = "MAGREZA";
@@ -107,3 +63,4 @@ function getText(value){
         return state.textConstructor.text;
     }
 }
+
