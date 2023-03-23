@@ -15,6 +15,8 @@ function State(){
     this.btnCalc = null;
     this.btnClear = null;
 
+    this.divName = null;
+
     this.errorHeight = null;
     this.errorWeight = null
 }
@@ -100,9 +102,13 @@ export function init(){
             const resultNumber = Number(result);
             state.responseNumber.innerHTML = resultNumber;
 
-            textController.addCard(resultNumber);
-            state.TextConstructor = new TextConstructor();
+            console.log(state.responseNumber.innerHTML);
+            textController.changeDiv(resultNumber);
         }
+    });
+
+    state.responseNumber.addEventListener('change', (event) => {
+        
     });
 }
 
