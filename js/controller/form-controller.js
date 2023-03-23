@@ -15,6 +15,8 @@ function State(){
     this.btnCalc = null;
     this.btnClear = null;
 
+    this.divName = null;
+
     this.errorHeight = null;
     this.errorWeight = null
 }
@@ -31,7 +33,7 @@ export function init(){
     state.errorHeight = document.querySelector('[data-error="height"]');
     state.errorWeight = document.querySelector('[data-error="weight"]');
 
-    //Função de change da altura
+//Função de alteração no input, colocando um ponto entre os dois primerios números
     state.inputHeight.addEventListener("input", function() {
         const value = state.inputHeight.value;
 
@@ -41,7 +43,7 @@ export function init(){
             state.inputHeight.value = numberNewValue;
         }
     });
-
+//Função de change da altura
     state.inputHeight.addEventListener("change", (event) => {
         if(!event.target.value || event.target.value === ""){
             showErrorInput('height', "Campo Obrigatório");
@@ -55,7 +57,7 @@ export function init(){
         }
     });
 
-    //Função de change do peso
+//Função de change do peso
     state.inputWeight.addEventListener("change", (event) => {
         if(!event.target.value || event.target.value === ""){
             showErrorInput('weight', "Campo Obrigatório");
@@ -69,7 +71,7 @@ export function init(){
         }
     });
 
-    //Função de clique do botão de limpar
+//Função de clique do botão de limpar
     state.btnClear.addEventListener('click', (event) => {
         event.preventDefault();
         clear();
@@ -80,14 +82,14 @@ export function init(){
         state.inputWeight.classList.remove("input-error");
     });
 
-    //Função de "click" do botão de calcular
+//Função de "click" do botão de calcular
     state.btnCalc.addEventListener('click', (event) => {
         event.preventDefault();
 
         const errors = numberController.getErrors(state.constructor);
         
-        //Função Objecto.keys
-        //verifica se os campos de input estão devidamente preenchidos
+    //Função Objecto.keys
+    //verifica se os campos de input estão devidamente preenchidos
         const keys = Object.keys(errors);
         if(keys.length > 0){
             for(let i = 0; i < keys.length; i++){
@@ -100,8 +102,7 @@ export function init(){
             const resultNumber = Number(result);
             state.responseNumber.innerHTML = resultNumber;
 
-            textController.addCard(resultNumber);
-            state.TextConstructor = new TextConstructor();
+            textController.changeDiv(resultNumber);
         }
     });
 }
