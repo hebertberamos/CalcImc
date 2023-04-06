@@ -13,6 +13,13 @@ export function init(){
     console.log(state.titleText.innerHTML);
 }
 
+export function deletText(){
+    if(!state.text.innerText == "" && !state.titleText.innerText == ""){
+        state.text.innerText = "";
+        state.titleText.innerText = "";
+    }
+}
+
 export function changeDiv(result){
     changTitle(result);
     changText(result)
