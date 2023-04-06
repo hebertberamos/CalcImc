@@ -80,6 +80,7 @@ export function init(){
         showErrorInput('weight', "");
         state.inputHeight.classList.remove("input-error");
         state.inputWeight.classList.remove("input-error");
+        textController.deletText();
     });
 
 //Função de "click" do botão de calcular
