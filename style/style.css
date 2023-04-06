@@ -57,6 +57,7 @@ form{
 }
 
 .error-message{
+    height: 18.75px;
     color: rgb(206, 59, 59);
 }
 
@@ -70,7 +71,7 @@ form{
     justify-content: space-around;
     width: 100%;
     max-width: 250px;
-    height: 100px;
+    height: 60px;
     margin: 0px auto;
 }
 
